@@ -5,7 +5,7 @@ __pycache__/
 # Logs
 *.log
 logs/*
-!logs/dag_processor/.gitkeep
+!logs/.gitkeep
 
 # IDE settings
 .vscode/
