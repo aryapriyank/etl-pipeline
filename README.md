@@ -6,16 +6,16 @@ ETL Pipeline using Apache Airflow with PostgreSQL and Open-Meteo API.
 
 ### PgAdmin Configuration
 
-1. Goto localhost:5050
+1. Go to `localhost:5050`
 2. Click on **Add Server**
 3. Under **General** tab:
    - **Name**: Give any name (e.g., `postgres_db`)
 4. Under **Connection** tab:
-   - **Hostname**: Get the IP address of the postgres container:
+   - **Hostname**: Get the IP address of the postgres container by running the following command:
      ```bash
      docker inspect <container_id>
      ```
-     (As mentioned in the docker-compose for postgres)
+     (The values below are defined in the docker-compose file for postgres)
    - **Port**: `5432`
    - **Database**: `airflow`
    - **Username**: `airflow`
@@ -27,7 +27,7 @@ ETL Pipeline using Apache Airflow with PostgreSQL and Open-Meteo API.
 
 - **Connection ID**: `postgres_default`
 - **Connection Type**: `Postgres`
-- **Host**: postgres container name (e.g., `etl-pipeline-postgres-1`)
+- **Host**: PostgreSQL container name (e.g., `etl-pipeline-postgres-1`)
 - **Login**: `airflow`
 - **Password**: `airflow`
 - **Port**: `5432`
